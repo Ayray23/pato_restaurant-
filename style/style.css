@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.hero{
+    height: 600px;
+    width: 100%;
+    background-image: url(../Assets/sheep.jpg);
+    box-shadow: inset 0 0 0 2000px rgba(31, 32, 0, 0.589);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:15px
+    
+}
+.nav_img{
+    height: 40px;
+    width: 60px;
+    border-radius: 40%;
+}
+.nav_item ul{
+    display: flex;
+}
+.nav_item ul li,a{
+    list-style: none;
+    text-decoration: none;
+    margin-right: 10px;
+    color: white;
+    text-transform: uppercase;
+}
+.hero-content{
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+}
+.hero-content h4{
+    font-size: 2rem;
+}
+.hero-content h1{
+    font-size: 4rem;
+}
+.hero-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    margin: 20px;
+    padding: 2px;
+    width: 100px;
+    height: 40px;
+    background-color:white;
+    color: red;
+    cursor: pointer;
+    text-transform: uppercase;   
+}
+.hero-button:hover{
+    background-color: red;
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+    color: white;
+}
+.res-descr{
+   display: flex;
+height: 300px;
+    align-items: center;
+    align-content: center;
+    padding: 20px;
+}
+.res-descr div{
+   width: 50%;
+    padding-left: 40px;
+   
+
+}
+.res-descr article{
+    text-align: center;
+    width: 50%;
+    padding: 10px;
+    align-items: center;
+    align-content: center;
+
+}
+.res-descr h1{
+
+    color: red;
+    font-style: italic;
+    font-size: 3rem;
+}
+.res-descr h3{
+    font-size: 2rem;
+}
+.res-descr p{
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    font-weight: 100;
+}
+.res-descr_img{
+    height: 300px;
+    width: 500px;
+    padding: 20px;
+    padding-top: 50px;
+    border-radius: 12px;
+    transition: all 0.5s;
+}
+.res-descr_img:hover{
+    scale: 110% ;
+}
+.res-descr_h{
+    display: flex;
+    align-content:center;
+    padding-left: 18rem;
+    
+
+}
+.Discover{
+    display: flex;
+}
