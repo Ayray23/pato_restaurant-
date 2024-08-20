@@ -121,4 +121,9 @@ height: 300px;
 }
 .Discover{
     display: flex;
+    justify-content: center;
+    align-items: center;    
+    justify-content: space-evenly;
+    align-content: space-around;
+    
 }
