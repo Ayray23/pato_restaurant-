@@ -21,21 +21,92 @@ nav{
     color: black;
     text-transform: uppercase;
 }
-.menu-img{
+.menu-img1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .img-container {
     position: relative;
-    display: inline-block;
-}
-.menu-img button{
     position: relative;
-    
-    
-}
-.menu_button1{
-    background-color: black;
-    color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-direction: row;
+  }
+  
+  .img1 {
+    margin: 20px;
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+  }
+  .img1:hover {
+    transform: scale(1.1);
+  }
+  .button-container {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
-}
+  }
+  .button-container1{
+    position: ;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+    background-color: transparent;
+    border: none;
+    border-radius: 4px;
+    color: black;
+    text-transform: uppercase;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 1;
+    transition: background-color 0.3s ease; 
+  }
+  
+  .button:hover {
+    color: red; 
+  }
+  .menu-img2{
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .img-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  .img2 {
+    display: flex;
+    margin-left: 14rem;
+    justify-content: space-around;
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin: 20px;
+    
+      transition: transform 0.3s ease;
+    }
+  
+  .img2:hover {
+    transform: scale(1.1);
+  }
