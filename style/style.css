@@ -31,7 +31,7 @@ nav{
     list-style: none;
     text-decoration: none;
     margin-right: 10px;
-    color: white;
+    color: black;
     text-transform: uppercase;
 }
 .hero-content{
@@ -106,8 +106,10 @@ nav{
     font-weight: 100;
 }
 .res-descr_img{
+    flex-shrink: 1;
+    flex-wrap: wrap;
     height: 600px;
-    width: 800px;
+    width: 600px;
     padding: 20px;
     padding-top: 15rem;
     border: none;
