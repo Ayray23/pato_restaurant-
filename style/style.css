@@ -1,7 +1,9 @@
 *{
+
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    flex-wrap: wrap;
 }
 .hero{
     height: 600px;
@@ -13,6 +15,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     padding:15px
     
 }
@@ -68,7 +71,8 @@ nav{
 }
 .res-descr{
    display: flex;
-height: 300px;
+   justify-content: center;
+    height: 300px;
     align-items: center;
     align-content: center;
     padding: 20px;
@@ -102,11 +106,12 @@ height: 300px;
     font-weight: 100;
 }
 .res-descr_img{
-    height: 300px;
-    width: 500px;
+    height: 600px;
+    width: 800px;
     padding: 20px;
-    padding-top: 50px;
-    border-radius: 12px;
+    padding-top: 15rem;
+    border: none;
+    border-radius: 50px;
     transition: all 0.5s;
 }
 .res-descr_img:hover{
@@ -115,15 +120,78 @@ height: 300px;
 .res-descr_h{
     display: flex;
     align-content:center;
-    padding-left: 18rem;
+    padding-left: 1rem;
     
 
 }
-.Discover{
+
+
+
+.Discover {
+    padding-top: 18rem;
     display: flex;
-    justify-content: center;
-    align-items: center;    
+    flex-direction: row;
     justify-content: space-evenly;
+    align-items: center;
     align-content: space-around;
-    
+  
 }
+
+.Discover_img {
+  width: 200px;
+  height: 180px;
+  margin: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 1.9rem;
+  transition: all 0.5s;
+  
+}
+
+.Discover_img:hover {
+  transform: scale(1.2);
+}
+.Discover h1{
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-wrap: wrap;
+    cursor: pointer;
+    padding: 20px;
+}
+.Discover h1:hover{
+    transition: all 0.3s ease-in-out;
+    color: red;
+
+}
+.Discover h6{
+    font-size: small;
+    font-weight: 100;
+    text-wrap: wrap;
+    text-align: center;
+}
+/*.sticky {
+    position: sticky;
+    position: sticky;
+    top: 0; 
+    background-color: white; 
+    padding: 20px;
+    z-index: 1000;
+  }
+  
+  .sticky-img {
+    width: 800px; 
+    height: 600px;
+    border-radius: 20%; 
+    margin: 10px; 
+  }
+  
+  .sticky h5, .sticky h2 {
+    margin: 0; 
+    padding: 0;
+    color: #333;
+}
+  */
+  
+  
+  

@@ -1,0 +1,92 @@
+.body{
+  background-image: url(../Assets/set-table.jpg);
+}
+
+.nav_item ul li,a{
+    color: black;
+}
+.Reservation {
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: space-around;
+    height: 100vh;
+    
+  }
+  
+  form {
+    background-color: aquamarine;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+  }
+  form h1{
+    font-family: Lucida Console, Courier New, monospace ;
+    padding-top: 10px;
+    margin-left: 50px;
+    color: red;
+    font-size: large;
+  }
+  form h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    margin-left:50px ;
+    padding-bottom: 10px;
+    font-size: 40px;
+  }
+  .form-section {
+    margin-bottom: 20px;
+  }
+  
+  .split {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .split div {
+    width: 45%;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input[type="date"], select, input[type="text"]{
+    width: 100%;
+    padding: 15px; 
+    margin-bottom: 20px;
+    border: none; 
+    border-radius: 20px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+   input[type="tel"], input[type="email"] {
+        width: 180px;
+        height: 40px;
+        padding: 10px;
+        margin-right: 10px;
+        border-radius: 18px;*/
+   }
+  select {
+    background-position: right 10px top 50%;
+    background-repeat: no-repeat;
+    padding-right: 15px;
+  }
+  
+  button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 30px; 
+    border: none;
+    border-radius: 20px; 
+    cursor: pointer;
+    width: 50%;
+    font-size: 18px; 
+  }
+  
+  button[type="submit"]:hover {
+    background-color:lightblue;
+    color: black;
+  }
