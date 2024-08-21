@@ -3,21 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/Reserv.css">
     <title>Reservation</title>
-</head>
-<body>
-    <nav>
-        <div> 
-            <img src="./Assets/logo1.png" alt="logo" class="nav_img">
-        </div>
-        <div>
-            <ul>
-                <li> <a href="./index.html">home</a> </li>
-                <li> <a href="./Menu.html">menu</a> </li>
-                <li> <a href="./Reservation.html">Reservation</a> </li>
-                <li> <a href="./Gallery.html">gallery</a> </li>
-            </ul>
-        </div>
-    </nav>
+  </head>
+  <body >
+  <nav>
+      <div> 
+          <img src="./Assets/logo1.png" alt="logo" class="nav_img">
+      </div>
+      <div class="nav_item">
+          <ul>
+              <li> <a href="./index.html">home</a> </li>
+              <li> <a href="./Menu.html">menu</a> </li>
+              <li> <a href="./Reservation.html">Reservation</a> </li>
+              <li> <a href="./Gallery.html">gallery</a> </li>
+          </ul>
+      </div>
+  </nav>
+    <section class="Reservation">
+    <section class="">
+    
+      
+            <div>
+              <form class="form-container">
+                <h1>Reservation</h1>
+                <h2>Book a Table</h2>
+                
+                <div class="form-content split">
+                    <div class="form-section">
+                      <label>Date:</label>
+                      <input type="date" name="date" required>
+                    </div>
+                    <div class="form-section">
+                      <label>Time:</label>
+                      <select name="time" required>
+                        <option value="">Select a time</option>
+                        <option value="12:00">12:00 PM</option>
+                        <option value="13:00">1:00 PM</option>
+                        <option value="14:00">2:00 PM</option>
+                        <option value="15:00">3:00 PM</option>
+                        <option value="16:00">4:00 PM</option>
+                        <option value="17:00">5:00 PM</option>
+                        <option value="18:00">6:00 PM</option>
+                        <option value="19:00">7:00 PM</option>
+                        <option value="20:00">8:00 PM</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label>Person:</label>
+                      <select name="Person" required>
+                             <option value="1 Person">1 Person</option>
+                            <option value="2 Person">2 Person</option>
+                            <option value="3 Person">3 Person</option>
+                            <option value="4 Person">4 Person</option>
+                           
+                          </select>
+                    </div>
+                      <div>
+                        <label>Name:</label>
+                        <input type="text" name="name1" required>
+                      </div>
+                       <div class="form-section split">
+                            <div>
+                                 <label>Email:</label>
+                                <input type="email" name="email1" required>
+                            </div>
+                        </div>
+                     
+                    <div class="form-section split">
+                      <div>
+                        <label>Phone:</label>
+                        <input type="tel" name="phone1" required>
+                      </div>
+                    </div>
+                  </div>
+                    <button type="submit">Book Table</button>
+                  </form>
+                  
+                
+              
+            </div>
+        </section>
+
+  </section>
+    
 </body>
 </html>
