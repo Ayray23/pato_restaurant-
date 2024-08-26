@@ -9,6 +9,8 @@
     height: 600px;
     width: 100%;
     background-image: url(../Assets/sheep.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     box-shadow: inset 0 0 0 2000px rgba(31, 32, 0, 0.589);
 }
 nav{
@@ -131,6 +133,7 @@ nav{
 
 .Discover {
     padding-top: 18rem;
+    margin-bottom: 3rem;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -196,4 +199,456 @@ nav{
   */
   
   
+  .card-container{
+    display: flex;
+    gap: 2rem;
+    padding: 4rem;
+}
+.card{
+    width: 400px;
+    overflow: hidden;
+    padding: 10px;
+}
+.card img{
+    margin-top: 6rem;
+    height: 300px;
+    width: 350px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+.card img:hover{ 
+    transform: scale(1.1);
+    border-radius: 15px;
+}
+.card h1{
+    font-size: 2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    margin-top: 15px;
+
+}
+.card h1:hover{
+    color: red;
+}
+.card p{
+    font-size: 1rem;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+.card button{
+    margin-top: 15px;
+    border: none;
+    background: none;
+    color: black;
+    font-size: 15px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.card button:hover{
+    color: red;
+    background-color: white;
+}
+
+header {
+    text-align: center;
+    margin: 20px 0;
+    padding: 20px;
+    font-size: 2rem;
+  }
   
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .menu-item {
+    position: relative;
+    width: 300px;
+    text-align: center;
+  }
+  
+  .menu-item img {
+    width: 100%;
+    border-radius: 10px;
+    transition: all 0.5s;
+  
+  }
+  .menu-item img:hover{
+    scale: 110% ;
+  }
+  
+  
+  .menu-item a {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 18px;
+    font-weight:lighter;
+    background-color:white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+  }
+  .menu-item a:hover{
+    background-color: red;
+  }
+  
+
+  .Reservation{
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.reservation-container {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 1000px;
+    width: 100%;
+    height: 800px;
+    margin-top: 50px;
+    
+}
+
+.form-container {
+    margin-top: 10px;
+    padding: 30px;
+    /*flex: 1;*/
+}
+
+.form-container h2 {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.form-container .highlight {
+    color: #c1272d;
+    font-style: italic;
+    font-size: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="tel"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 50%;
+    margin-left: 50px;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+.image-container {
+    flex: 1;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+
+.review {
+    text-align: center;
+    height: 60%;
+    width: 100%;
+    margin-top: 30px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .review-content {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .review-photo {
+    margin-top: 20px;
+    width: 100px;
+    height: 100px;
+    border-radius: 30%;
+    margin-bottom: 15px;
+    border: 5px solid #e67e22;
+  }
+  .review h1{
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-wrap: wrap;
+    cursor: pointer;
+    padding: 10px;
+  }
+  .review h2{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #c1272d;
+    font-style: italic;
+  }
+  .review p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .review-stars {
+    font-size: 1.5rem;
+    color: #e67e22;
+  }
+  
+  .review-author {
+    font-weight: bold;
+    color: #555;
+  }
+
+
+  .news{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4rem;
+    
+  }
+  .news h2{
+    font-size: 1.5rem;
+    color: #c1272d;
+    font-style: italic;
+  }
+  .news h1{
+    font-size: 2.5rem;
+    font-weight: bold;
+    
+  }
+  .news-container{
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    margin-left: 6rem;
+}
+.new{
+    width: 400px;
+    overflow: hidden;
+    padding: 10px;
+}
+.new img{
+
+    margin-top: 2rem;
+    height: 200px;
+    width: 300px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+.new img:hover{ 
+    transform: scale(1.1);
+    border-radius: 15px;
+}
+.new h1{
+    font-size: 2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    margin-top: 15px;
+
+}
+.new h1:hover{
+    color: red;
+}
+.new p{
+    font-size: 1rem;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+.new button{
+    margin-top: 15px;
+    border: none;
+    background: none;
+    color: black;
+    font-size: 15px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.new button:hover{
+    color: red;
+    background-color: white;
+}
+.signup{
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    margin-top: 5rem;
+    margin: 0;
+    margin-bottom: 7rem;
+}
+.signup-container {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    width: 70%;
+    margin-top: 5rem;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.signup-text {
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 20px;
+    color: #333;
+    letter-spacing: 2px;
+}
+
+.signup-form {
+    display: flex;
+    align-items: center;
+    width: 70%;
+}
+
+.input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+input[type="email"] {
+    padding: 10px 40px 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+.icon {
+    position: absolute;
+    right: 10px;
+    font-size: 18px;
+    color: #777;
+}
+
+.signup-container button {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    width: 140px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 10px;
+    text-transform: uppercase;
+}
+
+.signup-container button:hover {
+    background-color: #333;
+}
+
+foot {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: #fff;
+    margin-top: 3rem;
+    padding: 0;
+}
+
+footer {
+    background-color: #1a1a1a;
+    padding: 40px 0;
+    margin-top: 4rem;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.footer-section {
+    flex: 1;
+    display: flex;
+    margin: 20px;
+}
+
+.footer-section h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.footer-section p {
+    line-height: 1.6;
+}
+
+.footer-section a {
+    color: #f39c12;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.latest-twitter .date {
+    font-size: 12px;
+    color: #777;
+    margin-top: 10px;
+}
+
+.gallery-images {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.gallery-images img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}

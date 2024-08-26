@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="./style/style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"> 
     <title>Food cantern</title>
 </head>
 <body>
@@ -43,29 +44,226 @@
 </section>
 
 
-<main class="Discover">
 
-    <div >
-         <img src="./Assets/london.jpg" alt="Street" class="Discover_img">
-         
-          <h1> Romantic Restaurant</h1>
-        <h6>Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros</h6>
-     </div>
-    
-    <div >
-         <img src="./Assets/streak.jpg" alt="Street" class="Discover_img">
-        <h1>Delicious food</h1>
-        <h6>Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros</h6>
-     </div>
-    
-    <div >
-         <img src="./Assets/wine.jpg" alt="Street" class="Discover_img">
+<section class="card-container">
+    <div class="card">
+        <img src="./Assets/streak.jpg" alt="streak">
+        <h1>Nice streaks</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, pariatur!
+
+        </p>
+        <button>
+            learn more
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+    </div>
+    <div class="card">
+        <img src="./Assets/muffin.webp" alt="cakes">
+        <h1>Nice cakes for you </h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, pariatur!
+
+        </p>
+        <button>
+            learn more
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+        
+    </div>
+    <div class="card">
+        <img src="./Assets/wine.jpg" alt="wine">
         <h1>Red wine you love</h1>
-        <h6>Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros</h6>
-     </div>
-    
-   
-</main>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, pariatur!
 
+        </p>
+        <button>
+            learn more
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+    </div>
+</section>
+</section>
+<section>
+    <header>
+        <h1>Discover Our Menu</h1>
+    </header>
+    
+    <section class="menu">
+        <div class="menu-item">
+            <img src="./Assets/tart-1283822_1280.jpg" alt="Lunch">
+            <a href="#">Lunch</a>
+        </div>
+        <div class="menu-item">
+            <img src="./Assets/fish-2073798_1280.jpg" alt="Dinner">
+            <a href="#">Dinner</a>
+        </div>
+        <div class="menu-item">
+            <img src="./Assets/pink-wine.jpg" alt="Drink">
+            <a href="#">Drink</a>
+        </div>
+        <div class="menu-item">
+            <img src="./Assets/raspberries-2431029_1280.jpg" alt="Starters">
+            <a href="#">Starters</a>
+        </div>
+        <div class="menu-item">
+            <img src="./Assets/drinks.jpg" alt="Happy Hour">
+            <a href="#">Happy Hour</a>
+        </div>
+        <div class="menu-item">
+            <img src="./Assets/tart-1283822_1280.jpg" alt="Dessert">
+            <a href="#">Dessert</a>
+        </div>
+    </section>
+    
+    
+</section>
+
+<section class="Reservation">
+    <div class="reservation-container">
+        <div class="form-container">
+            <h2><span class="highlight">Reservation</span><br>BOOK TABLE</h2>
+            <form action="" method="POST">
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Time</label>
+                <select id="time" name="time">
+                    <option value="9:00">9:00</option>
+                    <option value="10:00">10:00</option>
+                    <option value="11:00">11:00</option>
+                    <option value="12:00">12:00</option>
+                    <option value="13:00">13:00</option>
+                    <option value="14:00">14:00</option>
+                    
+                </select>
+
+                <label for="people">People</label>
+                <select id="people" name="people">
+                    <option value="1">1 person</option>
+                    <option value="2">2 person</option>
+                    <option value="3">3 person</option>
+                    <option value="4">4 person</option>
+                    <option value="5">5 person</option>
+                    <option value="6">6 person</option>
+                
+                </select>
+
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Name" required>
+
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" placeholder="Phone" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+
+                <button type="submit">BOOK TABLE</button>
+            </form>
+        </div>
+        <div class="image-container">
+            <img src="./Assets/set-table.jpg" alt="Restaurant Table">
+        </div>
+    </div>
+ </section>
+ <section class="Reservation">
+    <section id="review" class="review">
+        <h2><span>Customers Say</span> </h2>
+           <h1>REVIEW</h1> 
+        <div class="review-content">
+        <img src="./Assets/asian-man-1468032_640.jpg" alt="Customer photo" class="review-photo">
+        <p>“We are lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tellus sem, mattis in pretium nec, fermentum viverra dui.”</p>
+        <div class="review-stars">
+            ★★★★★
+        </div>
+        <p class="review-author">MARIE SIMMONS - NEW YORK</p>
+    </div>
+</section>
+ </section>
+ <section >
+    <div class="news">
+
+        <h2>Latest news </h2>
+        <h1>THE BLOG</h1> 
+    </div>
+    <section class="news-container">
+        <div class="new">
+            <img src="./Assets/blog-01.jpg.webp" alt="streak">
+            <h1>BEST PLACE FOR WINE</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, pariatur!
+    
+            </p>
+            <button>
+                learn more
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
+        <div class="new">
+            <img src="./Assets/blog-02.jpg.webp" alt="cakes">
+            <h1>EGG AND CHEESE </h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, pariatur!
+    
+            </p>
+            <button>
+                learn more
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+            
+        </div>
+        <div class="new">
+            <img src="./Assets/blog-03.jpg.webp" alt="wine">
+            <h1>Best place for wedding</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, pariatur!
+    
+            </p>
+            <button>
+                learn more
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
+    </section>
+ </section>
+ <section class="signup">
+    <div class="signup-container">
+        <div class="signup-text">SPECIALS SIGN UP</div>
+        <form action="" method="POST" class="signup-form">
+            <div class="input-container">
+                <input type="email" placeholder="Email Address" required>
+                <span class="icon">&#9993;</span> <!-- Unicode envelope icon -->
+            </div>
+            <button type="submit">SIGN-UP</button>
+        </form>
+    </div>
+ </section>
+ <section class="foot">
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section contact-us">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 8th floor, 379 Hudson St, New York, NY 10018</p>
+                <p><i class="fas fa-phone"></i> (+1) 96 716 6879</p>
+                <p><i class="fas fa-envelope"></i> contact@site.com</p>
+            </div>
+            <div class="footer-section latest-twitter">
+                <h3>Latest Twitter</h3>
+                <p><i class="fab fa-twitter"></i> @colorlib</p>
+                <p>Activello is a good option. It has a slider built into that displays the featured image in the slider.</p>
+                <a href="https://buff.ly/2zaSfAQ">https://buff.ly/2zaSfAQ</a>
+                <p>21 Dec 2017</p>
+            </div>
+            <div class="footer-section gallery">
+                <h3>Gallery</h3>
+                <div class="gallery-images">
+                    <img src="./Assets/drinks.jpg" alt="Gallery Image 1">
+                    <img src="./Assets/fried-prawn.jpg" alt="Gallery Image 2">
+                    <img src="./Assets/Rice.jpg" alt="Gallery Image 3">
+                    <img src="./Assets/tart-1283822_1280.jpg" alt="Gallery Image 4">
+                    <img src="./Assets/streak.jpg" alt="Gallery Image 5">
+                    <img src="./Assets/raspberries-2431029_1280.jpg" alt="Gallery Image 6">
+                    <img src="./Assets/muffin.webp" alt="Gallery Image 7">
+                    <img src="./Assets/blog-01.jpg.webp" alt="Gallery Image 8">
+                </div>
+            </div>
+        </div>
+    </footer>
+ </section>
 </body>
 </html>
