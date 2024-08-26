@@ -175,28 +175,7 @@ nav{
     text-wrap: wrap;
     text-align: center;
 }
-/*.sticky {
-    position: sticky;
-    position: sticky;
-    top: 0; 
-    background-color: white; 
-    padding: 20px;
-    z-index: 1000;
-  }
-  
-  .sticky-img {
-    width: 800px; 
-    height: 600px;
-    border-radius: 20%; 
-    margin: 10px; 
-  }
-  
-  .sticky h5, .sticky h2 {
-    margin: 0; 
-    padding: 0;
-    color: #333;
-}
-  */
+
   
   
   .card-container{
