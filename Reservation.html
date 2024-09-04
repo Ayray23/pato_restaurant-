@@ -8,9 +8,12 @@
     <title>Reservation</title>
   </head>
   <body >
-  <nav>
+    <nav>
       <div> 
-          <img src="./Assets/logo1.png" alt="logo" class="nav_img">
+          <a href="./index.html">
+              <img src="./Assets/logo1.png" alt="logo" class="nav_img">
+          </a>
+          
       </div>
       <div class="nav_item">
           <ul>
@@ -20,73 +23,90 @@
               <li> <a href="./Gallery.html">gallery</a> </li>
           </ul>
       </div>
-  </nav>
+    </nav>
     <section class="Reservation">
-    <section class="">
     
-      
-            <div>
-              <form class="form-container">
-                <h1>Reservation</h1>
-                <h2>Book a Table</h2>
-                
-                <div class="form-content split">
-                    <div class="form-section">
-                      <label>Date:</label>
-                      <input type="date" name="date" required>
-                    </div>
-                    <div class="form-section">
-                      <label>Time:</label>
-                      <select name="time" required>
-                        <option value="">Select a time</option>
-                        <option value="12:00">12:00 PM</option>
-                        <option value="13:00">1:00 PM</option>
-                        <option value="14:00">2:00 PM</option>
-                        <option value="15:00">3:00 PM</option>
-                        <option value="16:00">4:00 PM</option>
-                        <option value="17:00">5:00 PM</option>
-                        <option value="18:00">6:00 PM</option>
-                        <option value="19:00">7:00 PM</option>
-                        <option value="20:00">8:00 PM</option>
-                      </select>
-                    </div>
-                    <div>
-                      <label>Person:</label>
-                      <select name="Person" required>
-                             <option value="1 Person">1 Person</option>
-                            <option value="2 Person">2 Person</option>
-                            <option value="3 Person">3 Person</option>
-                            <option value="4 Person">4 Person</option>
-                           
-                          </select>
-                    </div>
-                      <div>
-                        <label>Name:</label>
-                        <input type="text" name="name1" required>
-                      </div>
-                       <div class="form-section split">
-                            <div>
-                                 <label>Email:</label>
-                                <input type="email" name="email1" required>
-                            </div>
-                        </div>
-                     
-                    <div class="form-section split">
-                      <div>
-                        <label>Phone:</label>
-                        <input type="tel" name="phone1" required>
-                      </div>
-                    </div>
-                  </div>
-                    <button type="submit">Book Table</button>
-                  </form>
-                  
-                
-              
-            </div>
-        </section>
+      <div class="Bg-reserv">
+        <h2 class="reservation-titl">Reservation</h2>
+      </div>
+<section class="Reservation">
+    <div class="container">
+        <div class="reservation-form">
+            <form class="form">
+                <h1 class="book-title">BOOK TABLE</h1>
+                <div class="form-group">
+                    <label for="date">Date</label>
+                    <input type="date" id="date" name="date">
+                </div>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Name">
+                </div>
+                <div class="form-group">
+                    <label for="time">Time</label>
+                    <select id="time" name="time">
+                        <option value="9:00">9:00</option>
+                        <!-- Add other time options here -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="text" id="phone" name="phone" placeholder="Phone">
+                </div>
+                <div class="form-group">
+                    <label for="people">People</label>
+                    <select id="people" name="people">
+                        <option value="1 person">1 person</option>
+                        <!-- Add other people options here -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Email">
+                </div>
+                <button type="submit" class="book-button">BOOK TABLE</button>
+            </form>
+        </div>
+        <div class="image-container">
+            <img src="./Assets/set-table.jpg" alt="Table Image">
+        </div>
+    </div>
+</section>
 
   </section>
     
+
+  <section class="foot">
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section contact-us">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 8th floor, 379 Hudson St, New York, NY 10018</p>
+                <p><i class="fas fa-phone"></i> (+1) 96 716 6879</p>
+                <p><i class="fas fa-envelope"></i> contact@site.com</p>
+            </div>
+            <div class="footer-section latest-twitter">
+                <h3>Latest Twitter</h3>
+                <p><i class="fab fa-twitter"></i> @colorlib</p>
+                <p>Activello is a good option. It has a slider built into that displays the featured image in the slider.</p>
+                <a href="https://buff.ly/2zaSfAQ">https://buff.ly/2zaSfAQ</a>
+                <p>21 Dec 2017</p>
+            </div>
+            <div class="footer-section gallery">
+                <h3>Gallery</h3>
+                <div class="gallery-images">
+                    <img src="./Assets/drinks.jpg" alt="Gallery Image 1">
+                    <img src="./Assets/fried-prawn.jpg" alt="Gallery Image 2">
+                    <img src="./Assets/Rice.jpg" alt="Gallery Image 3">
+                    <img src="./Assets/tart-1283822_1280.jpg" alt="Gallery Image 4">
+                    <img src="./Assets/streak.jpg" alt="Gallery Image 5">
+                    <img src="./Assets/raspberries-2431029_1280.jpg" alt="Gallery Image 6">
+                    <img src="./Assets/muffin.webp" alt="Gallery Image 7">
+                    <img src="./Assets/blog-01.jpg.webp" alt="Gallery Image 8">
+                </div>
+            </div>
+        </div>
+    </footer>
+ </section>
 </body>
 </html>

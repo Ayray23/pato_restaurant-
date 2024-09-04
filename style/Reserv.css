@@ -5,7 +5,33 @@
 .nav_item ul li,a{
     color: black;
 }
-.Reservation {
+.Bg-reserv{
+  background-image: url(../Assets/tart-1283822_1280.jpg);
+  height: 300px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: inset 0 0 0 2000px rgba(31, 32, 0, 0.489);
+}
+.reservation-titl {
+  background-image: url(../Assets/tart-1283822_1280.jpg);
+  height: 500px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: inset 0 0 0 2000px rgba(31, 32, 0, 0.489);
+  font-size: 2rem;
+  font-style: italic;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  }
+/*.Reservation {
    
     display: flex;
     flex-direction: row;

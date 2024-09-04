@@ -35,5 +35,16 @@
   .image-gallery img:hover {
     transform: scale(1.1);
   }
-  
+  @media (max-width:500px){
+    .footer-section {
+      margin: 20px;
+      width: 1000px;
+    }
+    .footer-container {
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      } 
+  }
   

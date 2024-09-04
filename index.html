@@ -3,25 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/style.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"> 
     <title>Food cantern</title>
 </head>
 <body>
     <main class="hero">
         <nav>
-        <div> 
-            <img src="./Assets/logo1.png" alt="logo" class="nav_img">
-        </div>
-        <div class="nav_item">
-            <ul>
-                <li> <a href="./index.html">home</a> </li>
-                <li> <a href="./Menu.html">menu</a> </li>
-                <li> <a href="./Reservation.html">Reservation</a> </li>
-                <li> <a href="./Gallery.html">gallery</a> </li>
-            </ul>
-        </div>
-    </nav>
+            <div> 
+                <a href="./index.html">
+                    <img src="./Assets/logo1.png" alt="logo" class="nav_img">
+                </a>
+                
+            </div>
+            <div class="menu-icon">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="nav_item">
+
+                <ul>
+                    <li> <a href="./index.html">home</a> </li>
+                    <li> <a href="./Menu.html">menu</a> </li>
+                    <li> <a href="./Reservation.html">Reservation</a> </li>
+                    <li> <a href="./Gallery.html">gallery</a> </li>
+                </ul>
+            </div>
+        </nav>
     <div class="hero-content">
         <h4>Welcome to</h4>
         <h1>Pato place</h1>
@@ -31,17 +38,19 @@
         </a>
     </div>
     </main>
-<section class="res-descr">
-    <article>
-        <h1> Italian Restaurant</h1>
-        <h3>Welcome</h3>
-        <p>Donec quis lorem nulla. Nunc eu odio mi.<br> Morbi nec lobortis est. Sed fringilla, nunc sed imperdiet lacinia, <br>nisl ante egestas mi, ac facilisis ligula sem id neque.</p>
-    </article>
-    <div>
-        <img src="./Assets/Rice.jpg" alt="desserts" class="res-descr_img">
-    </div>
-    
-</section>
+
+    <section class="res-descr">
+        <article>
+            <h1> Italian Restaurant</h1>
+            <h3>Welcome</h3>
+            <p>Donec quis lorem nulla. Nunc eu odio mi.<br> Morbi nec lobortis est. Sed fringilla, nunc sed imperdiet lacinia, <br>nisl ante egestas mi, ac facilisis ligula sem id neque.</p>
+        </article>
+        <div>
+            <img src="./Assets/Rice.jpg" alt="desserts" class="res-descr_img">
+        </div>
+
+    </section>
+
 
 
 
@@ -83,7 +92,7 @@
 </section>
 </section>
 <section>
-    <header>
+    <header class="title-disc">
         <h1>Discover Our Menu</h1>
     </header>
     
@@ -117,67 +126,62 @@
     
 </section>
 
+<h2 class="reservation-title">Reservation</h2>
 <section class="Reservation">
-    <div class="reservation-container">
-        <div class="form-container">
-            <h2><span class="highlight">Reservation</span><br>BOOK TABLE</h2>
-            <form action="" method="POST">
-                <label for="date">Date</label>
-                <input type="date" id="date" name="date" required>
-
-                <label for="time">Time</label>
-                <select id="time" name="time">
-                    <option value="9:00">9:00</option>
-                    <option value="10:00">10:00</option>
-                    <option value="11:00">11:00</option>
-                    <option value="12:00">12:00</option>
-                    <option value="13:00">13:00</option>
-                    <option value="14:00">14:00</option>
-                    
-                </select>
-
-                <label for="people">People</label>
-                <select id="people" name="people">
-                    <option value="1">1 person</option>
-                    <option value="2">2 person</option>
-                    <option value="3">3 person</option>
-                    <option value="4">4 person</option>
-                    <option value="5">5 person</option>
-                    <option value="6">6 person</option>
-                
-                </select>
-
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Name" required>
-
-                <label for="phone">Phone</label>
-                <input type="tel" id="phone" name="phone" placeholder="Phone" required>
-
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Email" required>
-
-                <button type="submit">BOOK TABLE</button>
+    <div class="container">
+        <div class="reservation-form">
+            <form class="form">
+                <h1 class="book-title">BOOK TABLE</h1>
+                <div class="form-group">
+                    <label for="date">Date</label>
+                    <input type="date" id="date" name="date">
+                </div>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Name">
+                </div>
+                <div class="form-group">
+                    <label for="time">Time</label>
+                    <select id="time" name="time">
+                        <option value="9:00">9:00</option>
+                        <!-- Add other time options here -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="text" id="phone" name="phone" placeholder="Phone">
+                </div>
+                <div class="form-group">
+                    <label for="people">People</label>
+                    <select id="people" name="people">
+                        <option value="1 person">1 person</option>
+                        <!-- Add other people options here -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Email">
+                </div>
+                <button type="submit" class="book-button">BOOK TABLE</button>
             </form>
         </div>
         <div class="image-container">
-            <img src="./Assets/set-table.jpg" alt="Restaurant Table">
+            <img src="./Assets/set-table.jpg" alt="Table Image">
         </div>
     </div>
- </section>
- <section class="Reservation">
+</section>
+
     <section id="review" class="review">
-        <h2><span>Customers Say</span> </h2>
-           <h1>REVIEW</h1> 
+        <h2><span>Customers Say</span>REVIEW</h2>
         <div class="review-content">
         <img src="./Assets/asian-man-1468032_640.jpg" alt="Customer photo" class="review-photo">
-        <p>“We are lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tellus sem, mattis in pretium nec, fermentum viverra dui.”</p>
+        <p>“We  viverra dui.”</p>
         <div class="review-stars">
             ★★★★★
         </div>
         <p class="review-author">MARIE SIMMONS - NEW YORK</p>
     </div>
-</section>
- </section>
+    </section>
  <section >
     <div class="news">
 
@@ -221,6 +225,7 @@
         </div>
     </section>
  </section>
+
  <section class="signup">
     <div class="signup-container">
         <div class="signup-text">SPECIALS SIGN UP</div>
@@ -234,7 +239,7 @@
     </div>
  </section>
  <section class="foot">
-    <footer>
+    <footer class="footer-class">
         <div class="footer-container">
             <div class="footer-section contact-us">
                 <h3>Contact Us</h3>
