@@ -13,6 +13,13 @@ nav{
   padding:15px
   
 }
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
 .nav_img{
   height: 40px;
   width: 60px;
@@ -50,12 +57,13 @@ nav{
   font-size: 4rem;
 }
 .menu-details {
-    margin-right: 6rem;
-    margin-left: 6rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    display: flex;
-    
+  margin-right: 6rem;
+  margin-left: 6rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: row;
+  
 }
 .menu-details-a {
   margin-bottom: 1rem;
@@ -67,7 +75,7 @@ nav{
 }
 
 .menu-details-section{
-   margin-top:2rem ;
+ margin-top:2rem ;
 }
 .menu-details-section div{
 display: flex ;
@@ -83,13 +91,13 @@ font-weight: lighter;
 margin-top: 10px;
 }
 .menu-bg-img{
-  height: 300px;
-  width: 100%;
-  background-image: url(../Assets/pink-wine.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  box-shadow: inset 0 0 0 2000px rgba(31, 32, 0, 0.489);
+height: 300px;
+width: 100%;
+background-image: url(../Assets/pink-wine.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+box-shadow: inset 0 0 0 2000px rgba(31, 32, 0, 0.489);
 }
 
 .menu-bg-img h1 {
@@ -102,22 +110,22 @@ margin-top: 10px;
   text-align: center;
 }
 
-.menu-card-bg{
+  .menu-card-bg{
     margin-right: 6rem;
     margin-top: 2rem;
-    margin-bottom: 2rem;
-}
+    margin-bottom: 1rem;
+  }
 .menu-card-container{
     margin-right: 6rem;
     margin-left: 3rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    display: flex;
+    display: flex; 
 }
 .menu-card{
   display: flex;
   align-items: center;
-  width: 50%;
+  width: 50%; 
 } 
 .menu-card-img{
   margin-top: 2rem;
@@ -138,6 +146,7 @@ margin-top: 10px;
   font-size: 2rem;
   font-weight: normal;
   margin-bottom: 10px;
+  text-align: center;
 }
 .menu-card-desc p{
   font-size: 0.8rem;
@@ -148,3 +157,189 @@ margin-top: 10px;
   font-weight: 800;
 }
 
+
+
+.menu-dinner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.menu-ite {
+  display: flex;
+  width: 48%;
+  margin-bottom: 20px;
+  flex-wrap: nowrap;
+}
+
+.menu-ite img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-right: 20px;
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+.menu-ite img:hover{
+  scale: 110% ;
+}
+
+
+.menu-descript {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.menu-descript h3 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.menu-descript p {
+  margin: 5px 0;
+  font-size: 0.9em;
+  color: #666;
+}
+
+.menu-descript span {
+  font-size: 1em;
+  font-weight: bold;
+  color: #000;
+}
+
+.Dinner-bg-img{
+  height: 300px;
+  width: 100%;
+  background-image: url(../Assets/tart-1283822_1280.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: inset 0 0 0 2000px rgba(31, 32, 0, 0.489);
+}
+
+.Dinner-bg-img h1 {
+  position: relative; 
+  top: 80%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2.5rem;
+  text-align: center;
+}
+@media (max-width: 768px){
+  .menu-icon{
+    color: black;
+    font-size:1.5rem;
+    display: block;
+    margin-left: auto;
+    margin-right: 10px;
+  }
+  nav{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding:15px
+    
+  }
+  .nav_item ul{
+    display: none;
+  }
+  .menu-content{
+    height: 400px;
+    width: 100%;
+    background-image: url(../Assets/cake.jpg);
+    
+  }
+  .menu-details {
+    margin-right: 2rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+  }
+ .menu-bg-img h1 {
+  position: relative; 
+  top: 50%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  }
+  .menu-details-a {
+    margin-bottom: 1rem;
+    width: 50%;
+  }
+} 
+@media (max-width: 500px) {
+  .menu-icon{
+    color: black;
+    font-size:1.5rem;
+    display: block;
+    margin-left: auto;
+    margin-right: 10px;
+  }
+  nav{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding:15px
+    
+  }
+  .nav_item ul{
+    display: none;
+  }
+  .menu-content{
+    height: 300px;
+    width: 100%;
+    background-image: url(../Assets/cake.jpg);
+  }
+  .menu-ite {
+    display: flex;
+    width: 48%;
+    margin-bottom: 20px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .menu-details {
+    margin-right: 2rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+  }
+ .menu-bg-img h1 {
+  position: relative; 
+  top: 50%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  }
+  .menu-details-a {
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+  .menu-dinner {
+    display:block; 
+    padding: 20px;
+  }
+}
+/* Media queries for mini screen */
+@media (max-width:320px) {
+  .menu-details {
+    margin-right: 2rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+  }
+}
